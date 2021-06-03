@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoT</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/estilos.css" />
-    <script src="js/index.js" type="module"></script>
-</head>
+    <script src="js/index.js" type="module" defer></script>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <ul class="personajes row list-unstyled">
-            <li class="personaje personaje-dummy col">
-                <div class="card personaje-card">
-                    <img src="" alt="" class="img-personaje card-img-top" />
-                    <div class="card-body">
-                        <h2 class="nombre card-title h4"></h2>
-                        <div class="info">
-                            <ul class="metadata list-unstyled">
-                                <li class="edad"></li>
-                                <li class="estado">
-                                    <span class="texto-estado"></span>
-                                    <i class="muerto d-none fas fa-thumbs-down"></i>
-                                    <i class="vivo d-none fas fa-thumbs-up"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="personaje-overlay">
-                            <ul class="metadata list-unstyled">
-                                <li class="anyos-reinado d-none"></li>
-                                <li class="arma d-none"></li>
-                                <li class="destreza d-none"></li>
-                                <li class="peloteo d-none"></li>
-                                <li class="asesora d-none"></li>
-                                <li class="sirve d-none"></li>
-                            </ul>
-                            <div class="acciones">
-                                <button class="btn accion">habla</button>
-                                <button class="btn accion">muere</button>
-                            </div>
-                        </div>
-                    </div>
-                    <i class="emoji"></i>
+      <ul class="personajes row list-unstyled">
+        <li class="personaje personaje-dummy col">
+          <div class="card personaje-card">
+            <img src="" alt="" class="img-personaje card-img-top" />
+            <div class="card-body">
+              <h2 class="nombre card-title h4"></h2>
+              <div class="info">
+                <ul class="metadata list-unstyled">
+                  <li class="edad"></li>
+                  <li class="estado">
+                    <span class="texto-estado"></span>
+                    <i class="muerto d-none fas fa-thumbs-down"></i>
+                    <i class="vivo d-none fas fa-thumbs-up"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="personaje-overlay">
+                <ul class="metadata list-unstyled">
+                  <li class="anyos-reinado d-none"></li>
+                  <li class="arma d-none"></li>
+                  <li class="destreza d-none"></li>
+                  <li class="peloteo d-none"></li>
+                  <li class="asesora d-none"></li>
+                  <li class="sirve d-none"></li>
+                </ul>
+                <div class="acciones">
+                  <button class="btn accion btn-muerte">habla</button>
+                  <button class="btn accion">muere</button>
                 </div>
-            </li>
-        </ul>
+              </div>
+            </div>
+            <i class="emoji"></i>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="comunicaciones">
-        <p class="display-1">Una frase que dice alguien</p>
-        <img src="img/no-one.jpg" alt="Nombre y familia del que habla" />
+      <p class="display-1">Una frase que dice alguien</p>
+      <img src="img/no-one.jpg" alt="Nombre y familia del que habla" />
     </div>
-</body>
-
+  </body>
 </html>
