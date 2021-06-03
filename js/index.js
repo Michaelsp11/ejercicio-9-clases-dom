@@ -17,7 +17,7 @@ const pintaPersonajes = () => {
         imgPersonaje.src = `img/${nombre}.jpg`;
         imgPersonaje.alt = `${nombre} ${familia}`;
         const nombrePersonaje = elementoPersonaje.querySelector(".nombre");
-        nombrePersonaje.textContent = nombre;
+        nombrePersonaje.textContent = `${nombre} ${familia}`;
         const edadPersonaje = elementoPersonaje.querySelector(".metadata .edad");
         edadPersonaje.textContent = edad;
         if (vivo) {
