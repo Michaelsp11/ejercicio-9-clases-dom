@@ -19,7 +19,11 @@ const pintaPersonajes = () => {
         const nombrePersonaje = elementoPersonaje.querySelector(".nombre");
         nombrePersonaje.textContent = `${nombre} ${familia}`;
         const edadPersonaje = elementoPersonaje.querySelector(".metadata .edad");
-        edadPersonaje.textContent = edad;
+        edadPersonaje.textContent = `Edad: ${edad}`;
+        const estadoPersonaje = elementoPersonaje.querySelector(
+            ".metadata .estado .texto-estado"
+        );
+        estadoPersonaje.textContent = "Estado:";
         if (vivo) {
             elementoPersonaje
                 .querySelector(".estado .vivo")
