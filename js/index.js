@@ -5,6 +5,7 @@ import { Asesor } from "./Asesor.js";
 import { Escudero } from "./Escudero.js";
 
 const pintaPersonajes = () => {
+    let delay = 1;
     const personajes = document.querySelector(".personajes");
     for (const personaje of arrayPersonajes) {
         const { nombre, familia, edad, vivo } = personaje;
@@ -71,7 +72,8 @@ const pintaPersonajes = () => {
         }
         setTimeout(() => {
             personajes.append(elementoPersonaje);
-        }, 1000);
+        }, 1000 * delay);
+        delay++;
     }
 };
 pintaPersonajes();
