@@ -1,14 +1,14 @@
-import { Personaje } from "./js/Personaje.js";
+import { Personaje } from "./Personaje.js";
 
 export class Rey extends Personaje {
-  anyosReinado;
+    anyosReinado;
 
-  constructor(nombreRey, familiaRey, edadRey, anyosReinadoRey) {
-    super(nombreRey, familiaRey, edadRey);
-    this.anyosReinado = anyosReinadoRey;
-  }
+    constructor(nombreRey, familiaRey, edadRey, anyosReinadoRey) {
+        super(nombreRey, familiaRey, edadRey);
+        this.anyosReinado = anyosReinadoRey;
+    }
 
-  comunicar() {
-    return `${super.comunicar()}Vais a morir todos`;
-  }
+    comunicar() {
+        return `${super.comunicar()}Vais a morir todos`;
+    }
 }
